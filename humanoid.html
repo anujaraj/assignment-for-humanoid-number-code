@@ -1,0 +1,57 @@
+<html>
+<title></title>
+<body>
+<input type="text" id="n1" name="no1">
+<br/>
+<button onclick="result1()">go1 for inbuilt </button>
+<button onclick="result2()">go2 for custom</button>
+</body>
+<script>
+function result1()
+{
+var a = document.getElementById("n1").value
+console.log(a);
+var len = a.length;
+console.log(len);
+var d = parseInt(a.slice(-1));
+ console.log(d);
+ switch(d) 
+        {
+            case 1: document.write(a+"st");break;
+			
+            case 2: document.write(a+"nd");break;
+            case 3: document.write(a+"rd");break;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 0:
+			case 9:document.write(a+"th");
+        }
+}		
+function result2()
+{
+var a = document.getElementById("n1").value
+console.log(a);
+var len = a.length;
+console.log(len);
+var d = parseInt(a/((len-1)*10))
+ console.log(d);
+ switch(d) 
+        {
+            case 1: document.write(a+"st");break;
+			
+            case 2: document.write(a+"nd");break;
+            case 3: document.write(a+"rd");break;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 0:
+			case 9:document.write(a+"th");
+        }
+}		
+</script>
+</html>
